@@ -28,7 +28,7 @@ Collects the number of commits for all projects in GitLab for a given time perio
 1. `Get-GitLabBranchMergeRequests.ps1` <br />
 Collects summary details of open branches and merge requests in GitLab and saves it to `project-branch-merge-requests.json`
 
-## Pefroming Analysis
+## Performing Analysis
 Once the data collection is complete, we can begin the analysis process.
 There are three additional scripts to execute which will generate the full analysis of the GitLab instance.
 The following scripts must be executed in the order specified:
