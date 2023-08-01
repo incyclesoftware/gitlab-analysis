@@ -41,10 +41,6 @@ process {
         foreach ($file in $files) {
             $projectsProcessed.Add([int]::Parse($file.BaseName))
         }
-        # Temporary Conditions
-        if($project.id -eq 4132 -or $project.id -eq 250 -or $projectsProcessed.Contains($project.id)) {
-            continue
-        }
 
         $bareCloneFolder = Join-Path $workDirectory $project.id
 

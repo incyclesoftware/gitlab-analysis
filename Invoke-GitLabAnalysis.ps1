@@ -32,10 +32,6 @@ process {
         $percentComplete = [System.Convert]::ToInt32(($index / $totalProjects) * 100)
         Write-Progress "Processing projects..." -Status "$percentComplete%" -PercentComplete $percentComplete
 
-        if($project.id -ne 1411) {
-            continue
-        }
-
         $index++
         
         $commitsLastThirtyDays = 0
